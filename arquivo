@@ -1,0 +1,52 @@
+result = ""
+loop do
+    puts result
+    puts "***CALCULADORA***"
+    puts "Selecione uma das seguintes opções"
+    puts "1 - Para adição"
+    puts "2 - Para subtração"
+    puts "3 - Para multiplicação"
+    puts "4 - Para divisão"
+    puts "0- Sair"
+    puts "Opção: "
+
+    option = gets.chomp.to_i
+
+    if option == 1
+        print "Digite o primeiro número: "
+        n1 = gets.chomp.to_f
+        print "Digite o segundo número: "
+        n2 = gets.chomp.to_f
+        count = n1 + n2
+        puts "Resultado: #{count}"
+    
+    elsif option == 2
+        print "Digite o primeiro número: "
+        n1 = gets.chomp.to_f
+        print "Digite o segundo número: "
+        n2 = gets.chomp.to_f
+        count = n1 - n2
+        puts "Resultado: #{count}"
+
+    elsif option == 3
+        print "Digite o primeiro número: "
+        n1 = gets.chomp.to_f
+        print "Digite o segundo número: "
+        n2 = gets.chomp.to_f
+        count = n1 * n2
+        puts "Resultado: #{count}"
+
+    elsif option == 4
+        print "Digite o primeiro número: "
+        n1 = gets.chomp.to_f
+        print "Digite o segundo número: "
+        n2 = gets.chomp.to_f
+        count = n1 / n2
+        pputs "Resultado: #{count}"
+
+    elsif option == 0
+        break if option == 0
+    else
+        result = "Opção Inválida!"
+    end
+end
